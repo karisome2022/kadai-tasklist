@@ -38,7 +38,7 @@ class TasksController extends Controller
         //タスク作成
         $task = new Task;
         $task->content = $request->content;
-        $task->save;
+        $task->save();
         
         //トップページへ
         return redirect('/');
